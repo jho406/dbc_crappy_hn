@@ -1,0 +1,77 @@
+body {
+  margin-top: 10px;
+
+}
+
+.wrapper {
+  width: 900px;
+  min-height: 500px;
+  margin: 0 auto;
+  background: #F6F6EF;
+  font: 8px #333 verdana;
+
+}
+
+header {
+  height: 20px;
+  background: #FF6600;
+  padding: 3px 5px 3px 5px;
+}
+
+nav {
+
+}
+
+nav a {
+  color: white;
+  font: 12px verdana;
+  text-decoration: none;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+
+}
+
+th {
+  text-align: left;
+}
+.login_form{
+  width: 350px;
+}
+.login_form input{
+  margin: 0 20px;
+}
+
+.container {
+  font-size: 14px;
+}
+
+.container a {
+  text-decoration: none;
+  color: #828282;
+}
+
+.container a:hover {
+  color: #000;
+}
+
+.container li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.post-detail {
+  font-size: 10px;
+  color: #828282;
+}
+
+.right{
+  float:right;
+}

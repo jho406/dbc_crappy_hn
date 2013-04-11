@@ -1,0 +1,8 @@
+<div class="container">
+<h2><%= @user.email %></h2>
+<ol>
+  <% @submissions.each do |submission| %>
+    <li><%= submission.title %></li>
+  <% end %>
+</ol>
+</div>

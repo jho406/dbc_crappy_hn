@@ -1,0 +1,14 @@
+<div class="container">
+<h2><%= @post.title %></h2>
+<p><%= @post.body %></p>
+<form action="post/<%=@post.id%>/comments"method="post">
+  <textarea name="body"></textarea>
+  <button type="submit">add comment</button>
+</form>
+  <ol>
+  <% @comments.each do |comment| %>
+  <li><a href="/comment/<%= comment.id %>/upvote">▲</a><%= comment.body %></li>
+  <div class="comment-detail"><span><a href="/user?id=<%=comment.user.id%>"><%= comment.user.email %></a></div> 
+  <% end %>
+  </ol>
+</div>

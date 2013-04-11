@@ -1,0 +1,16 @@
+<div class="container">
+<ol>
+<% @posts.each do |post|%>
+<li><a href="/post/<%= post.id %>/upvote">▲</a><span><a href="<%= post.url %>"> <%=post.title%> </a> (<%= URI.parse(post.url).host %>)</span></li>
+<div class="post-detail"><span><%=post.votes%> </span>points by <span><a href="/user?id=<%=post.user.id%>"><%= post.user.email %></a> minutes ago | 
+
+<%if post.votes.zero?%>
+  <a href="/item?id=<%= post.id%>">discuss</a>
+<%else%>
+  <a href="/item?id=<%= post.id%>"><%= post.comment_count %> comments</a>
+<%end%>
+
+</div>
+<% end %>
+</ol>
+</div>

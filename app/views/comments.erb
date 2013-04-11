@@ -1,0 +1,8 @@
+<div class="container">
+<h2><%= @user.email %></h2>
+<ol>
+  <% @comments.each do |comment| %>
+    <li><%= comment.body %></li>
+  <% end %>
+</ol>
+</div>
